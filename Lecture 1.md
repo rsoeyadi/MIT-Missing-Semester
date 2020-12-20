@@ -27,8 +27,10 @@ Your computer has a bunch of programs that it knows how to use
 
     - basically, when we run a command, the computer will look into the path for a program that can run what I am asking the computer to do (ex., it needs to find out where to find the date program)
 
-    - if we want to figure out what is running the command I want to execute, we can do the following
+    - `PATH` is a colon separated list of directories to search for commands. 
 
+    - if we want to figure out what is running the command I want to execute, we can do the following
+    
       ```bash
       ryans@Ryans-MacBook-Pro ~ % which echo
       echo: shell built-in command
@@ -41,6 +43,10 @@ Your computer has a bunch of programs that it knows how to use
 You can use ```ls --help```
 
 You will see **flags and options** I.e., ```-l``` is a flag while ```[OPTIONS]``` is an option
+
+```touch [**-A** [-][[hh]mm]SS] [**-acfhm**] [**-r** file] [**-t** [[CC]YY]MMDDhhmm[.SS]]```
+
+
 
 The ```-l``` flag gives you a long-listing format
 
@@ -138,3 +144,16 @@ This is the **super** user that can read and write to everything
 
 ```xdf-open lectures.html``` to open files (Linux)
 
+On Mac, you can just use ```open```
+
+---
+
+### Shebang (#!)
+
+When a text file with a shebang is used as if it is an executable in a [Unix-like](https://en.wikipedia.org/wiki/Unix-like) operating system, the [program loader](https://en.wikipedia.org/wiki/Loader_(computing)) mechanism parses the rest of the file's initial line as an [interpreter directive](https://en.wikipedia.org/wiki/Interpreter_directive).
+
+---
+
+### chmod
+
+Use this command if you need to change permissions on a file (i.e., you don't have the right to execute a program)
