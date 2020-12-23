@@ -221,3 +221,17 @@ Typing the up arrow will give you back your last command, and if you keep pressi
 The `history` command will let you access your shell history programmatically. It will print your shell history to the standard output. If we want to search there we can pipe that output to `grep` and search for patterns.`history | grep find` will print commands that contain the substring “find”.
 
 If you start a command with a leading space it won’t be added to your shell history. This comes in handy when you are typing commands with passwords or other bits of sensitive information. If you make the mistake of not adding the leading space, you can always manually remove the entry by editing your `.bash_history` or `.zhistory`.
+
+---
+
+## Extra Notes for Myself
+
+```bash
+while /bin/bash three.sh > error.sh; do :; done;
+#will execute until error is thrown
+```
+
+```:``` is equivalent to ```true```
+
+
+
